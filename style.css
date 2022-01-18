@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    margin-top: 16px; 
+}
+
+.div-input {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+}
+
+.div-btn {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+button {
+    width: 64px;
+    height: 32px;
+}
+
+.div-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.new-Div {
+    padding: 8px;
+    margin: 8px;
+    font-size: 16px;
+    border: 1px solid black;
+}
