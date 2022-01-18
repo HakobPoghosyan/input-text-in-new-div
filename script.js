@@ -1,5 +1,6 @@
-let text = document.querySelector(".inputText");  
-let divElement = document.querySelector(".div-content");
+const text = document.querySelector(".inputText");  
+const divElement = document.querySelector(".div-content");
+let arr = [];
 
 function randColor() {
     let r = Math.floor(Math.random() * (256)),
@@ -15,4 +16,12 @@ function buttonClick() {
     newDiv.append(text.value);
     divElement.append(newDiv);
     newDiv.style.background = randColor();
+    
+    const object = {
+        background:  newDiv.style.background,
+        text:  text.value,
+    };
+
+    arr.push(object);
+    console.log(arr);
 }
