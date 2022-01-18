@@ -9,14 +9,10 @@ function randColor() {
 }
 
 function buttonClick() {
-    let newDiv = document.createElement("div");
+    const newDiv = document.createElement("div");
     newDiv.className = "new-Div";
-    
+
     newDiv.append(text.value);
     divElement.append(newDiv);
-    
-    let elements = document.querySelectorAll(".new-Div");
-    for (let i = 0; i < elements.length; i++) {
-        elements[i].style.background = randColor();
-    }
+    newDiv.style.background = randColor();
 }
